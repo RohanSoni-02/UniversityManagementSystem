@@ -1,5 +1,5 @@
 # UniversityManagementSystem
-The University Management System is a secure and scalable software application designed to manage the administra-tive, academic, and personal data of teachers and students. The system will allow admin, teachers, and students to have a personalized account where they can access and manage their own data.![image](https://github.com/RohanSoni-02/UniversityManagementSystem/assets/110955425/8fe8dcc6-5862-47cb-ac01-d333dbc13a60)
+The University Management System is a secure and scalable software application designed to manage the administra-tive, academic, and personal data of teachers and students. The system will allow admin, teachers, and students to have a personalized account where they can access and manage their own data.
 
 # Business Scenario
 The University Management System is designed for educational institutions that need a centralized and efficient way of managing their resources. The system will help the institution to manage data related to admissions, academics, and administration, in a more organized way. This system will improve the overall efficiency of the institution and provide a better user experience for teachers and students.
