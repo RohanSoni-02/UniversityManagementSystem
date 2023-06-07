@@ -1,0 +1,57 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core">
+    <h:head>
+        <title>Display an Teacher's Details</title>
+    </h:head>
+    <h:body>
+        <h2>Search for a Teacher</h2>
+        <h3>Please enter the Teacher id and password</h3>
+        <h:form>
+            <table>
+                <tbody>
+                    <tr>
+                        <td>
+                            <h:outputLabel value="User Id:"/>
+                        </td>
+                        <td>
+                            <h:inputText title="EmpId" id="empid"
+                                         required="true"
+                                         requiredMessage="Employee id must not be blank"
+                                         maxlength="5"
+                                         value="#{myEmpManagedBean.empId}">
+                                <f:validateLength minimum="5" maximum="5"/>
+                            </h:inputText>
+                        </td>
+                        <td>
+                            <h:message for="empid" style="color:red"/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <h:outputLabel value="Password:"/>
+                        </td>
+                        <td>
+                            <h:inputSecret title="Password" id="password"
+                                           required="true"
+                                           requiredMessage="Password must not be blank"
+                                           maxlength="10"
+                                           value="#{myEmpManagedBean.password}">
+                                <f:validateLength minimum="6" maximum="10"/>
+                            </h:inputSecret>
+                        </td>
+                        <td>
+                            <h:message for="password" style="color:red"/>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <p></p>
+            <h:commandButton id="submit" value="Submit"
+                             action="#{myEmpManagedBean.displayUser()}"/>
+        </h:form>
+    </h:body>
+</html>
